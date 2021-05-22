@@ -4,6 +4,40 @@
     width: 95px;
     border-radius: 25px;
     border: 2px solid #663399;
+    background: white;
+}
+
+.feature-card {
+    height: 36vh;
+    width: 21vw;
+    background: white;
+    border-radius: 10px;
+}
+
+.feature-card:hover {
+    color: white;
+    background: #663399;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+.feature-card .content {
+    font-size: 13px;
+    color: darkgrey;
+}
+
+.open-account {
+    color: #663399;
+    background: whitesmoke;
+    width: 21vw;
+    border-radius: 25px;
+    border: 2px solid #663399;
+}
+
+.open-account:hover {
+    color: white;
+    background: #9F62C9;
+    border-color: #9F62C9;
 }
 
 header {
@@ -46,11 +80,11 @@ a {
 }
 
 .bg-image {
-    background: url('../assets/blob-small.svg'), url('../assets/circle.svg'), url('../assets/accounting_dots.svg'), url('../assets/accounting_dots.svg');
-    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-    background-position: -130px 30px, 510px -160px, 350px 411px, 900px 551px;
-    background-size: 400px 600px, 800px 800px, 300px 150px, 300px 150px;
-    background-color: whitesmoke;
+    background: url('../assets/blob-small.svg'), url('../assets/circle.svg'), url('../assets/accounting_dots.svg'), url('../assets/accounting_dots.svg'), url('../assets/sol_wave_bg.svg');
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: -130px 30px, 510px -160px, 350px 411px, 900px 551px, 0px 512px;
+    background-size: 444px 600px, 800px 800px, 300px 150px, 300px 150px, 1350px 1050px;
+    background-color: white;
 }
 
 .super-simple {
@@ -60,10 +94,12 @@ a {
 }
 
 hr.dash-below {
-    border: 1px solid;
+    border: 2px solid;
     width: 15vw;
     position: relative;
     right: 27px;
+    background: black;
+    border-radius: 15px;
 }
 
 .eligibilty-cal {
@@ -178,7 +214,7 @@ input:checked+.slider:before {
     border-top-style: hidden;
     border-right-style: hidden;
     border-left-style: hidden;
-    border-bottom-style: hidden;
+    border-bottom-style: double;
     font-size: 16px;
     font-weight: 500;
     width: 248px;
@@ -187,4 +223,30 @@ input:checked+.slider:before {
 #emiOfExistingLoan:focus {
     outline: none;
     border-bottom-style: groove;
+}
+
+input[type='range'] {
+    -webkit-appearance: none;
+    height: 5px;
+    padding: 0;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    height: 20px;
+}
+
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: #663399;
+    border-radius: 50%;
+    box-shadow: -210px 0 0 200px #9F62C9;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    border: 0;
 }

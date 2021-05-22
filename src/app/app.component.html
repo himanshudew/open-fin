@@ -13,7 +13,7 @@
 </head>
 
 <body class="bg-image">
-    <header id="header" class="navbar navbar-expand-md sticky-top">
+    <header id="header" class="navbar navbar-expand-md sticky-top mb-5">
         <a class="navbar-brand ">
             <img class="img-brand" src="../assets/logo@2x.png " width="65" height="65" alt=" ">
         </a>
@@ -37,7 +37,7 @@
     </header>
 
     <main class="container">
-        <section class="row mb-4" style="min-height: 120vh;">
+        <section class="row mb-5">
             <div class="col-md-6">
                 <div class="super-simple">
                     <h3>We make it Super Simple</h3>
@@ -53,21 +53,21 @@
                     <div class="cal-content">
                         <div class="mb-4">
                             <label>Monthly Income</label>
-                            <h6>&#x20b9; 1,50,000</h6>
-                            <input type="range" class="range" min="100000" max="500000" name="monthlyIncome">
+                            <h6>{{monthlyIncome | currency:'INR'}}</h6>
+                            <input type="range" id="myinput" [(ngModel)]="monthlyIncome" class="range" min="100000" max="300000" name="monthlyIncome">
                             <div class="clearfix">
                                 <span class="float-left">&#x20b9;1,00,000</span>
-                                <span class="float-right">&#x20b9;5,00,000</span>
+                                <span class="float-right">&#x20b9;3,00,000</span>
                             </div>
                         </div>
 
                         <div class="mb-4">
                             <label>Monthly Expense</label>
-                            <h6>&#x20b9; 1,50,000</h6>
-                            <input type="range" class="range" min="100000" max="500000" name="monthlyExpense">
+                            <h6>{{monthlyExpense | currency:'INR'}}</h6>
+                            <input type="range" [(ngModel)]="monthlyExpense" class="range" min="100000" max="300000" name="monthlyExpense">
                             <div class="clearfix">
                                 <span class="float-left">&#x20b9;1,00,000</span>
-                                <span class="float-right">&#x20b9;5,00,000</span>
+                                <span class="float-right">&#x20b9;3,00,000</span>
                             </div>
                         </div>
 
@@ -92,8 +92,8 @@
                         <div>
                             <label>EMI of existing loan (optional)</label>
                             <div>
-                                <label class="float-left">&#x20b9;</label>
-                                <input class="no-outline" type="number" name="emiOfExistingLoan" id="emiOfExistingLoan">
+                                <label class="float-left" style="font-size: 19px;">&#x20b9;</label>
+                                <input type="number" name="emiOfExistingLoan" id="emiOfExistingLoan">
                             </div>
                         </div>
                     </div>
@@ -110,15 +110,49 @@
             </div>
         </section>
 
-        <section class="row mb-4" style="min-height: 120vh;">
-            <div class="col-md-6">
+        <section class="row pt-5">
+            <div class="col-md-7">
+                <div class="row" style="font-size: 14px;">
+                    <div class="col align-self-start">
+                        <div class="feature-card shadow p-3 mb-5 ">
+                            <img class="mb-1" src="../assets/Get Paid Instantly.png" alt="" srcset="">
+                            <h6>Quick cash disburesment</h6>
+                            <p class="content">Get terms loans that your business needs within 72 hrs</p>
+                        </div>
 
+                        <div class="feature-card shadow p-3 mb-5 ">
+                            <img class="mb-1" src="../assets/Low interest rate.png" alt="" srcset="">
+                            <h6>Low-interest rate</h6>
+                            <p class="content">Achieve your financial goals with an amazing interest rate starting at 13% per annum</p>
+                        </div>
+
+                        <div class="feature-card shadow p-3 mb-5 ">
+                            <img class="mb-1" src="../assets/Secure Payments.png" alt="" srcset="">
+                            <h6>Zero Paperwork</h6>
+                            <p class="content">Get started Instantly by submitting only your basic details & bank statments</p>
+                        </div>
+                    </div>
+                    <div class="col align-self-center">
+                        <div class="feature-card shadow p-3 mb-5 ">
+                            <img class="mb-1" src="../assets/freelancer_feature_icon_6@1.5x.png" alt="" srcset="">
+                            <h6>Ace your business finances</h6>
+                            <p class="content">Manage banking, accounting & everything in between, on one platform</p>
+                        </div>
+
+                        <div class="feature-card shadow p-3 mb-5 ">
+                            <img class="mb-1" src="../assets/Covid.png" alt="" srcset="">
+                            <h6>Loans to fight COVIF-19</h6>
+                            <p class="content">Zero EMI for first 3 months on Back-to-Business loans of up tp 1 lakh</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6">
-                <div style="width: 30vw;float: left; ">
-                    <h1>We make it Super Simple</h1>
+            <div class="col-md-5 align-self-center">
+                <div style="width: 30vw;">
+                    <h1>Boost your business with Open</h1>
                     <hr class="dash-below">
-                    <img height="250" src="../assets/collect_img-video.png" alt="collect_img-video" srcset="">
+                    <p>Get your hands on term loans that's crafted for yout business.</p>
+                    <a href="https://open.money/" target="_blank" class="btn open-account mt-4 ">Get an open account</a>
                 </div>
             </div>
         </section>
