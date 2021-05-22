@@ -1,0 +1,190 @@
+.login {
+    color: #663399;
+    background: whitesmoke;
+    width: 95px;
+    border-radius: 25px;
+    border: 2px solid #663399;
+}
+
+header {
+    transition: all 0.25s ease-in;
+}
+
+.img-brand {
+    margin: -30px 0px -20px 30px;
+}
+
+.login:hover {
+    color: white;
+    background: #663399;
+}
+
+.getstarted {
+    width: 150px;
+    border-radius: 25px;
+    border: 2px solid #663399;
+    background-color: #663399;
+    color: white;
+}
+
+.getstarted:hover {
+    color: white;
+    background: #9F62C9;
+    border: 2px solid #9F62C9;
+}
+
+.get-money {
+    width: 120px;
+    border-radius: 25px;
+    background-color: white;
+    color: #663399;
+}
+
+a {
+    color: black;
+    cursor: default;
+}
+
+.bg-image {
+    background: url('../assets/blob-small.svg'), url('../assets/circle.svg'), url('../assets/accounting_dots.svg'), url('../assets/accounting_dots.svg');
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: -130px 30px, 510px -160px, 350px 411px, 900px 551px;
+    background-size: 400px 600px, 800px 800px, 300px 150px, 300px 150px;
+    background-color: whitesmoke;
+}
+
+.super-simple {
+    width: 20vw;
+    float: left;
+    margin-top: 40px;
+}
+
+hr.dash-below {
+    border: 1px solid;
+    width: 15vw;
+    position: relative;
+    right: 27px;
+}
+
+.eligibilty-cal {
+    height: max-content;
+    background-color: white;
+    width: 25vw;
+    float: right;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.loan-info {
+    background-color: #663399;
+    float: right;
+    text-align: center;
+    position: relative;
+    top: 70px;
+    right: 20px;
+    color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 25px;
+    font-size: 13px;
+}
+
+.sub-header {
+    background-color: whitesmoke;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.cal-content {
+    padding: 25px;
+    text-align: left;
+    font-size: 13px;
+}
+
+.range {
+    width: 100%;
+}
+
+.additional-select {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+/* Rounded sliders */
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #663399;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #663399;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(16px);
+    -ms-transform: translateX(16px);
+    transform: translateX(16px);
+}
+
+#emiOfExistingLoan {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: hidden;
+    font-size: 16px;
+    font-weight: 500;
+    width: 248px;
+}
+
+#emiOfExistingLoan:focus {
+    outline: none;
+    border-bottom-style: groove;
+}
