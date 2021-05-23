@@ -36,8 +36,8 @@
 
 .open-account:hover {
     color: white;
-    background: #9F62C9;
-    border-color: #9F62C9;
+    background: #663399;
+    border-color: #663399;
 }
 
 header {
@@ -72,6 +72,10 @@ header {
     border-radius: 25px;
     background-color: white;
     color: #663399;
+}
+
+.get-money:hover {
+    background-color: #9F62C9;
 }
 
 a {

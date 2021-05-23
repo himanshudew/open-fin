@@ -64,11 +64,7 @@
                         <div class="mb-4">
                             <label>Monthly Expense</label>
                             <h6>{{monthlyExpense | currency:'INR'}}</h6>
-                            <input type="range" [(ngModel)]="monthlyExpense" class="range" min="100000" max="300000" name="monthlyExpense">
-                            <div class="clearfix">
-                                <span class="float-left">&#x20b9;1,00,000</span>
-                                <span class="float-right">&#x20b9;3,00,000</span>
-                            </div>
+                            <input type="range" [(ngModel)]="monthlyExpense" class="range" min="0" max="100000" name="monthlyExpense">
                         </div>
 
                         <div class="mb-4">

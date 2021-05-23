@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'open-fin';
   monthlyIncome = 100000;
-  monthlyExpense = 100000;
+  monthlyExpense = 0;
 }
